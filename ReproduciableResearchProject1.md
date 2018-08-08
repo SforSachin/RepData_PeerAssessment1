@@ -33,7 +33,7 @@ colnames(AggrTable)<- c("Date", "Steps")
 hist(AggrTable$Steps, breaks=5, xlab="Steps", main = "Total Steps per Day")
 ```
 
-![](ReproduciableResearchProject1_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
+![](/figure/unnamed-chunk-3-1.png)<!-- -->
 
 ## Calculate mean and median of daily steps
 
@@ -96,7 +96,7 @@ p <- ggplot(intervalTable, aes(x=interval, y=Avg), xlab = "Interval", ylab="Aver
 p + geom_line()+xlab("Interval")+ylab("Average Number of Steps")+ggtitle("Average Number of Steps per Interval")
 ```
 
-![](ReproduciableResearchProject1_files/figure-html/unnamed-chunk-6-1.png)<!-- -->
+![](/figure/unnamed-chunk-6-1.png)<!-- -->
 
 ## Output interval that has max value along with the max value
 
@@ -159,7 +159,7 @@ hist(sumTable2$Steps, breaks=5, xlab="Steps", main = "Total Steps per Day with N
 legend("topright", c("Imputed Data", "Non-NA Data"), fill=c("black", "grey") )
 ```
 
-![](ReproduciableResearchProject1_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
+![](/figure/unnamed-chunk-11-1.png)<!-- -->
 
 ```r
 paste("Mean daily steps =", as.integer(mean(sumTable2$Steps)))
@@ -208,6 +208,6 @@ xyplot(Avg~interval|DayCategory, data=intervalTable2, type="l",  layout = c(1,2)
        ylab="Average Number of Steps", xlab="Interval")
 ```
 
-![](ReproduciableResearchProject1_files/figure-html/unnamed-chunk-13-1.png)<!-- -->
+![](/figure/unnamed-chunk-13-1.png)<!-- -->
 
 ## Yes, the step activity trends are different based on whether the day occurs on a weekend or not.
